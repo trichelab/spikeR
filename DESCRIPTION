@@ -1,14 +1,9 @@
 Package: spikeR
 Type: Package
-Title: Informative Title for Your Package
-Description: A longer statement about what this does. It must have at least one
-    complete sentence, and it may not begin with the name of the package or
-    "This package". Any URL must be enclosed in angle brackets. Any R packages
-    or other software you reference must be in single quotes. 'R CMD check'
-    may not report on these, but see  <https://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file>.
-    Failure to obey may result in CRAN rejecting your package submission.
-Version: 0.1.0
-Date: 2020-08-26
+Title: Spike-in normalization for ATACseq in bulk and single cells
+Description: Like it says on the tin. Implements some best practices for objective normalization of genome-wide accessibility assays. 
+Version: 0.1.1
+Date: 2021-01-15
 Authors@R: person("Tim", "Triche, Jr.", role=c("aut", "cre"), email="trichelab@gmail.com")
 Author: Tim Triche, Jr. [aut, cre]
 Maintainer: Tim Triche, Jr. <trichelab@gmail.com>
@@ -19,9 +14,11 @@ Depends:
     R (>= 3.0.0),
     RUVseq
 Imports:
-    csaw
+    csaw,
+    GenomicRanges
 Suggests:
     covr,
-    testthat
+    testthat,
+    RUVnormalize
 RoxygenNote: 6.0.0
 Roxygen: list(markdown = TRUE)
